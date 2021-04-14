@@ -155,7 +155,7 @@ public class DatePickerPlugin: CAPPlugin {
             dateFormatter.locale = Locale(identifier: self.pickerLocale!)
         }
         guard let dt = dateFormatter.date(from: date) else {
-            self.call?.reject("Failed to parse date")
+            self.call?.reject("Failed to parse date \(date) with format \(pickerFormat)")
             self.dismiss()
             return Date()
         }
