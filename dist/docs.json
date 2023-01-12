@@ -1,0 +1,919 @@
+{
+  "api": {
+    "name": "DatePickerPlugin",
+    "slug": "datepickerplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "present",
+        "signature": "(options: DatePickerOptions) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "DatePickerOptions"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "DatePickerOptions"
+        ],
+        "slug": "present"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "DatePickerOptions",
+      "slug": "datepickeroptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "min",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "If null, empty or undefined, will be none. use Date.toISOString()",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "max",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "If null, empty or undefined, will be none. use Date.toISOString()",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "date",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "If null, empty or undefined, will be current date",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "ios",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{DatePickerIosOptions}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "Personal configs for ios",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [
+            "DatePickerIosOptions"
+          ],
+          "type": "DatePickerIosOptions | undefined"
+        },
+        {
+          "name": "android",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{DatePickerBaseOptions}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "Personal configs for android",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [
+            "DatePickerBaseOptions"
+          ],
+          "type": "DatePickerBaseOptions | undefined"
+        }
+      ]
+    },
+    {
+      "name": "DatePickerIosOptions",
+      "slug": "datepickeriosoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "style",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{DatePickerIosStyle}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "\"inline\"",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "works only iOS 14.0 or heiger",
+                  "kind": "text"
+                }
+              ],
+              "name": "note"
+            },
+            {
+              "text": [
+                {
+                  "text": "Modal style for ios, for mor information, access: https://developer.apple.com/documentation/uikit/uidatepicker",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [
+            "DatePickerIosStyle"
+          ],
+          "type": "DatePickerIosStyle | undefined"
+        },
+        {
+          "name": "format",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "\"yyyy-MM-dd'T'HH:mm:ss.sssZ\"",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "ISO String format",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            },
+            {
+              "text": [
+                {
+                  "text": "Read (https://developer.apple.com/documentation/foundation/dateformatter)",
+                  "kind": "text"
+                }
+              ],
+              "name": "note"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "titleFontColor",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "hex string for title font color",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "titleBgColor",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "hex string for title background color",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "bgColor",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "hex string for picker background color",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "fontColor",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "hex string for picker font color",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            },
+            {
+              "text": [
+                {
+                  "text": "not work in inline style",
+                  "kind": "text"
+                }
+              ],
+              "name": "note"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "buttonBgColor",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "hex string for buttons background color",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "buttonFontColor",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "hex string for button font color",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "mergedDateAndTime",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{boolean}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "Format dateAndTime picker for ios",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        }
+      ]
+    },
+    {
+      "name": "DatePickerBaseOptions",
+      "slug": "datepickerbaseoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "format",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "\"yyyy-MM-dd'T'HH:mm:ss.sssZ\"",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "ISO String format",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            },
+            {
+              "text": [
+                {
+                  "text": "please, migrate this to ios and android props because the api is a little bit differen",
+                  "kind": "text"
+                }
+              ],
+              "name": "deprecated"
+            },
+            {
+              "text": [
+                {
+                  "text": "For ios read (https://developer.apple.com/documentation/foundation/dateformatter)",
+                  "kind": "text"
+                }
+              ],
+              "name": "note"
+            },
+            {
+              "text": [
+                {
+                  "text": "For android read (https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html)",
+                  "kind": "text"
+                }
+              ],
+              "name": "note"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "locale",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "If null, empty or undefined, use the device locale",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            },
+            {
+              "text": [
+                {
+                  "text": "for ios you can read abouth locale here (https://developer.apple.com/documentation/foundation/locale)",
+                  "kind": "text"
+                }
+              ],
+              "name": "note"
+            },
+            {
+              "text": [
+                {
+                  "text": "for android you can read abouth locale here (https://docs.oracle.com/javase/7/docs/api/java/util/Locale.html)",
+                  "kind": "text"
+                }
+              ],
+              "name": "note"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "mode",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{DatePickerMode}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "\"dateAndTime\"",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "Datepicker mode",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [
+            "DatePickerMode"
+          ],
+          "type": "DatePickerMode | undefined"
+        },
+        {
+          "name": "theme",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{DatePickerTheme}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "\"light\"",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "Datepicker themes",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [
+            "DatePickerTheme"
+          ],
+          "type": "string | undefined"
+        },
+        {
+          "name": "timezone",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "",
+                  "kind": "text"
+                },
+                {
+                  "text": " ",
+                  "kind": "space"
+                },
+                {
+                  "text": ": string",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": ": null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "If null, empty or undefined, will be the device timezone",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "doneText",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "If null, empty or undefined, will be \"OK\".",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "cancelText",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "If null, empty or undefined, will be \"CANCEL\".",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "is24h",
+          "tags": [
+            {
+              "text": [
+                {
+                  "text": "{string}",
+                  "kind": "text"
+                }
+              ],
+              "name": "type"
+            },
+            {
+              "text": [
+                {
+                  "text": "null",
+                  "kind": "text"
+                }
+              ],
+              "name": "default"
+            },
+            {
+              "text": [
+                {
+                  "text": "If null, empty or undefined, will be \"false\".",
+                  "kind": "text"
+                }
+              ],
+              "name": "description"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        }
+      ]
+    }
+  ],
+  "enums": []
+}
