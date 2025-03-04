@@ -2,6 +2,60 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/capacitor-community/date-picker/compare/v5.0.0...v6.0.0) (2024-05-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update to Capacitor 6 (#84)
+
+### Features
+
+* Update to Capacitor 6 ([#84](https://github.com/capacitor-community/date-picker/issues/84)) ([930ae7b](https://github.com/capacitor-community/date-picker/commit/930ae7be97c7a7c9082882f979d25d22d22af9cd))
+
+## [5.0.0](https://github.com/capacitor-community/date-picker/compare/v4.0.0...v5.0.0) (2023-05-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update to Capacitor 5 (#75)
+
+### Features
+
+* Update to Capacitor 5 ([#75](https://github.com/capacitor-community/date-picker/issues/75)) ([2857c3d](https://github.com/capacitor-community/date-picker/commit/2857c3df0f20cba89c2e7140309aab9cfd05f245))
+
+## [4.0.0](https://github.com/capacitor-community/date-picker/compare/v3.0.0...v4.0.0) (2023-03-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update to Capacitor 4 (#68)
+
+### Features
+
+* Update to Capacitor 4 ([#68](https://github.com/capacitor-community/date-picker/issues/68)) ([76d95cb](https://github.com/capacitor-community/date-picker/commit/76d95cb033de0c1cb45aec2bd80e334d4f90acaf))
+
+
+### Bug Fixes
+
+* **web:** ignore unused options ([83aec9c](https://github.com/capacitor-community/date-picker/commit/83aec9c5a1453f921ca9770df1003aaf753e7748))
+
+## [3.0.0](https://github.com/capacitor-community/date-picker/compare/v0.2.3...v3.0.0) (2023-02-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* Capacitor 3.0.0 support (#67)
+
+### Features
+
+* Capacitor 3.0.0 support ([#67](https://github.com/capacitor-community/date-picker/issues/67)) ([61e1a5d](https://github.com/capacitor-community/date-picker/commit/61e1a5d8146dc247031b52b5bea11923f2166020))
+
+
+### Bug Fixes
+
+* Android: Do not overwrite selected date when using dateAndTime mode ([cb12207](https://github.com/capacitor-community/date-picker/commit/cb1220715ed61e9d4ac138820a4deb24e8a71a90))
+
 ## [0.3.0](https://github.com/capacitor-community/date-picker/compare/v0.2.3...v0.3.0) (2021-02-17)
 
 

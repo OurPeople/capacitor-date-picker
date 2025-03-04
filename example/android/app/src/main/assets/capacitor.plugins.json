@@ -1,6 +1,6 @@
 [
 	{
-		"pkg": "@pantrist/capacitor-date-picker",
+		"pkg": "@capacitor-community/date-picker",
 		"classpath": "com.getcapacitor.community.datepicker.DatePickerPlugin"
 	},
 	{
