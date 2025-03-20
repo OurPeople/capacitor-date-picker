@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/Pantrist-dev/capacitor-date-picker/compare/v0.2.3...v7.0.0) (2025-03-20)
+
+### ⚠ BREAKING CHANGES
+
+* **cap-7:** migrate to capacitor 7
+
+### Features
+
+* **cap-7:** migrate to capacitor 7 ([0c6fe0f](https://github.com/Pantrist-dev/capacitor-date-picker/commit/0c6fe0fb0e713dba3edc9ad8efcc43db45ab0125))
+* **spm:** migrate to Swift Package Manager ([497f6e1](https://github.com/Pantrist-dev/capacitor-date-picker/commit/497f6e164f051d05675d7afd968348a77a192fd0))
+
 ## [6.0.0](https://github.com/Pantrist-dev/capacitor-date-picker/compare/v0.2.3...v6.0.0) (2024-04-29)
 
 
