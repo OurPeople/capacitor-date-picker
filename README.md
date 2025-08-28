@@ -1,3 +1,11 @@
+## OurPeople Fork
+
+This is a fork of the original repository to include a fix for iOS. The fix ensures that nil values do not cause a crash.
+
+As this is not packaged on npm, it must be installed via a git URL and must be committed with the dist folder.
+
+---
+
 <p align="center"><br><img src="https://user-images.githubusercontent.com/236501/85893648-1c92e880-b7a8-11ea-926d-95355b8175c7.png" width="128" height="128" /></p>
 <h3 align="center">Capacitor Date Picker</h3>
 <p align="center"><strong><code>@pantrist/capacitor-date-picker</code></strong></p>
